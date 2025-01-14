@@ -8,7 +8,7 @@ RUN apt update && apt upgrade -y && apt install -y \
     ssh wget unzip vim curl python3 python3-pip
 
 # Install the latest version of ngrok
-RUN wget -q https://ngrok-agent.s3.amazonaws.com/ngrok-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip \
+RUN wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip -O /ngrok-stable-linux-amd64.zip \
     && cd / && unzip ngrok-stable-linux-amd64.zip \
     && chmod +x ngrok
 
